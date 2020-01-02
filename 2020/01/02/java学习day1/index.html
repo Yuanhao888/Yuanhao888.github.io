@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Yuanhao</title>
+  <title>java学习day1 | Yuanhao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yuanhao">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="Java 简介Java是由Sun Microsystems公司于1995年5月推出的Java面向对象程序设计语言和Java平台的总称。由James Gosling和同事们共同研发，并在1995年正式推出。 Java分为三个体系：JavaSE（J2SE）（Java2 Platform Standard Edition，java平台标准版）JavaEE(J2EE)(Java 2 Platform,En">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java学习day1">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;02&#x2F;java%E5%AD%A6%E4%B9%A0day1&#x2F;index.html">
 <meta property="og:site_name" content="Yuanhao">
+<meta property="og:description" content="Java 简介Java是由Sun Microsystems公司于1995年5月推出的Java面向对象程序设计语言和Java平台的总称。由James Gosling和同事们共同研发，并在1995年正式推出。 Java分为三个体系：JavaSE（J2SE）（Java2 Platform Standard Edition，java平台标准版）JavaEE(J2EE)(Java 2 Platform,En">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-01-02T02:41:03.071Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Yuanhao" type="application/atom+xml">
@@ -161,116 +164,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-java学习day2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-java学习day1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/02/java%E5%AD%A6%E4%B9%A0day2/">java学习day2</a>
-    </h1>
-  
-
-        
-        <a href="/2020/01/02/java%E5%AD%A6%E4%B9%A0day2/" class="archive-article-date">
-  	<time datetime="2020-01-02T02:17:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Java-基础语法"><a href="#Java-基础语法" class="headerlink" title="Java 基础语法"></a>Java 基础语法</h3><p>一个 Java 程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。下面简要介绍下类、对象、方法和实例变量的概念。</p>
-<ul>
-<li>对象：对象是类的一个实例，有状态和行为。例如，一条狗是一个对象，它的状态有：颜色、名字、品种；行为有：摇尾巴、叫、吃等。</li>
-<li>类：类是一个模板，它描述一类对象的行为和状态。</li>
-<li>方法：方法就是行为，一个类可以有很多方法。逻辑运算、数据修改以及所有动作都是在方法中完成的。</li>
-<li>实例变量：每个对象都有独特的实例变量，对象的状态由这些实例变量的值决定。</li>
-</ul>
-<h3 id="Java-基本数据类型"><a href="#Java-基本数据类型" class="headerlink" title="Java 基本数据类型"></a>Java 基本数据类型</h3><p>  <strong>变量</strong>就是一个内存空间，大小由数据类型决定，空间是临时的。</p>
-<p>Java的两大数据类型:</p>
-<ul>
-<li>内置数据类型</li>
-<li>引用数据类型</li>
-</ul>
-<h3 id="内置数据类型"><a href="#内置数据类型" class="headerlink" title="内置数据类型"></a>内置数据类型</h3><p>Java语言提供了八种基本类型。六种数字类型（四个整数型，两个浮点型），一种字符类型，还有一种布尔型。</p>
-<p>1.<strong>byte</strong>(1个字节)<br>byte 数据类型是8位、有符号的，以二进制补码表示的整数；<br>最小值是 -128（-2^7）；<br>最大值是 127（2^7-1）；<br>默认值是 0；<br>byte 类型用在大型数组中节约空间，主要代替整数，因为 byte 变量占用的空间只有 int 类型的四分之一；<br>例子：byte a = 100，byte b = -50。</p>
-<p>2.<strong>short</strong>(2个字节)<br>short 数据类型是 16 位、有符号的以二进制补码表示的整数<br>最小值是 -32768（-2^15）；<br>最大值是 32767（2^15 - 1）；<br>Short 数据类型也可以像 byte 那样节省空间。一个short变量是int型变量所占空间的二分之一；<br>默认值是 0；<br>例子：short s = 1000，short r = -20000。</p>
-<p>3.<strong>int</strong>(4个字节)<br>int 数据类型是32位、有符号的以二进制补码表示的整数；<br>最小值是 -2,147,483,648（-2^31）；<br>最大值是 2,147,483,647（2^31 - 1）；<br>一般地整型变量默认为 int 类型；<br>默认值是 0 ；<br>例子：int a = 100000, int b = -200000。</p>
-<p>4.<strong>long</strong>(8个字节)<br>long 数据类型是 64 位、有符号的以二进制补码表示的整数；<br>最小值是 -9,223,372,036,854,775,808（-2^63）；<br>最大值是 9,223,372,036,854,775,807（2^63 -1）；<br>这种类型主要使用在需要比较大整数的系统上；<br>默认值是 0L；<br>例子： long a = 100000L，Long b = -200000L。<br>“L”理论上不分大小写，但是若写成”l”容易与数字”1”混淆，不容易分辩。所以最好大写。</p>
-<p>5.<strong>float</strong>(4个字节)<br>float 数据类型是单精度、32位、符合IEEE 754标准的浮点数；<br>float 在储存大型浮点数组的时候可节省内存空间；<br>默认值是 0.0f；<br>浮点数不能用来表示精确的值，如货币；<br>例子：float f1 = 234.5f。</p>
-<p>6.<strong>double</strong>(8个字节)<br>double 数据类型是双精度、64 位、符合IEEE 754标准的浮点数；<br>浮点数的默认类型为double类型；<br>double类型同样不能表示精确的值，如货币；<br>默认值是 0.0d；<br>例子：double d1 = 123.4。</p>
-<p>7.<strong>boolean</strong>(1个字节)<br>boolean数据类型表示一位的信息；<br>只有两个取值：true 和 false；<br>这种类型只作为一种标志来记录 true/false 情况；<br>默认值是 false；<br>例子：boolean one = true。</p>
-<p>8.<strong>char</strong>(2个字节)<br>char类型是一个单一的 16 位 Unicode 字符；<br>最小值是 \u0000（即为0）；<br>最大值是 \uffff（即为65,535）；<br>char 数据类型可以储存任何字符；<br>例子：char letter = ‘A’;。</p>
-<h3 id="Java-常量"><a href="#Java-常量" class="headerlink" title="Java 常量"></a>Java 常量</h3><p>常量在程序运行时是不能被修改的。<br>在 Java 中使用<strong>final</strong>关键字来修饰常量，声明方式和变量类似：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">final double PI = 3.1415927;</span><br></pre></td></tr></table></figure>
-<p>虽然常量名也可以用小写，但为了便于识别，通常使用<strong>大写字母</strong>表示常量。<br>字面量可以赋给任何内置类型的变量。</p>
-<h3 id="Java语言支持一些特殊的转义字符序列。"><a href="#Java语言支持一些特殊的转义字符序列。" class="headerlink" title="Java语言支持一些特殊的转义字符序列。"></a>Java语言支持一些特殊的转义字符序列。</h3><p>符号     字符含义<br>\n        换行 (0x0a)<br>\r        回车 (0x0d)<br>\f        换页符(0x0c)<br>\b        退格 (0x08)<br>\0        空字符 (0x20)<br>\s       字符串<br>\t        制表符<br>&quot;        双引号<br>&#39;        单引号<br>\\        反斜杠<br>\ddd    八进制字符 (ddd)<br>\uxxxx    16进制Unicode字符 (xxxx)</p>
-<h3 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h3><p>整型、实型（常量）、字符型数据可以混合运算。运算中，不同类型的数据先转化为同一类型，然后进行运算。<br>必须满足转换前的数据类型的位数要低于转换后的数据类型.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">低  ------------------------------------&gt;  高</span><br><span class="line"></span><br><span class="line">byte,short,char—&gt; int —&gt; long—&gt; <span class="built_in">float</span> —&gt; double</span><br></pre></td></tr></table></figure>
-
-<p>数据类型转换必须满足如下规则：</p>
-<ol>
-<li>不能对boolean类型进行类型转换。</li>
-<li>不能把对象类型转换成不相关类的对象。</li>
-<li>在把容量大的类型转换为容量小的类型时必须使用强制类型转换。</li>
-<li>转换过程中可能导致溢出或损失精度</li>
-<li>浮点数到整数的转换是通过舍弃小数得到，而不是四舍五入</li>
-</ol>
-<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p> 格式：(type)value type是要强制类型转换后的数据类型<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int i1 = 123;</span><br><span class="line">      byte b = (byte)i1;//强制类型转换为byte</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/02/java%E5%AD%A6%E4%B9%A0day2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java学习day1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/02/java%E5%AD%A6%E4%B9%A0day1/">java学习day1</a>
+    <h1 class="article-title" itemprop="name">
+      java学习day1
     </h1>
   
 
@@ -313,6 +214,32 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/2.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -320,16 +247,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/02/java%E5%AD%A6%E4%B9%A0day1/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/02/java%E5%AD%A6%E4%B9%A0day1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/01/02/java%E5%AD%A6%E4%B9%A0day2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          java学习day2
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/25/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一篇博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -349,146 +344,14 @@
 
 
 
-
   
-    <article id="post-第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/25/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">第一篇博客</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/25/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2019-10-25T09:13:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="辛辛苦苦搞了这么久"><a href="#辛辛苦苦搞了这么久" class="headerlink" title="辛辛苦苦搞了这么久"></a>辛辛苦苦搞了这么久</h3><p>辛辛苦苦搞了这么久，希望可以显示出来！！！</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/25/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/24/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/24/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-24T08:45:53.605Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/24/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -511,8 +374,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

@@ -167,6 +167,116 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-java学习day3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/02/java%E5%AD%A6%E4%B9%A0day3/">java学习day3</a>
+    </h1>
+  
+
+        
+        <a href="/2020/02/02/java%E5%AD%A6%E4%B9%A0day3/" class="archive-article-date">
+  	<time datetime="2020-02-02T13:38:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Java-运算符"><a href="#Java-运算符" class="headerlink" title="Java 运算符"></a>Java 运算符</h3><p>1.<strong>算术运算符</strong><br>算术运算符用在数学表达式中，它们的作用和在数学中的作用一样。</p>
+<ul>
+<li>加法 - 相加运算符两侧的值    </li>
+</ul>
+<ul>
+<li>减法 - 左操作数减去右操作数    </li>
+</ul>
+<ul>
+<li>乘法 - 相乘操作符两侧的值<br>/    除法 - 左操作数除以右操作数<br>％    取余 - 左操作数除以右操作数的余数    </li>
+</ul>
+<p>++    自增: 操作数的值增加1<br>–    自减: 操作数的值减少1    </p>
+<p>前缀自增自减法(++a,–a): 先进行自增或者自减运算，再进行表达式运算。<br>后缀自增自减法(a++,a–): 先进行表达式运算，再进行自增或者自减运算。 </p>
+<p>2.<strong>关系运算符</strong><br>==    检查如果两个操作数的值是否相等。返回值为true，false。<br>!=    检查如果两个操作数的值是否相等。    </p>
+<blockquote>
+<pre><code>检查左操作数的值是否大于右操作数的值。</code></pre><p>&lt;     检查左操作数的值是否小于右操作数的值。<br>=    检查左操作数的值是否大于或等于右操作数的值。<br>&lt;=    检查左操作数的值是否小于或等于右操作数的值。</p>
+</blockquote>
+<p>3.<strong>位运算符</strong><br>位运算符作用在所有的位上，并且按位运算。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">A = 0011 1100</span><br><span class="line">B = 0000 1101</span><br><span class="line">-----------------</span><br><span class="line">A&amp;B = 0000 1100</span><br><span class="line">A | B = 0011 1101</span><br><span class="line">A ^ B=0011 0001</span><br><span class="line">~A = 1100 0011</span><br><span class="line">A &lt;&lt; 2=1111 0000</span><br><span class="line">A &gt;&gt; 2=1111</span><br><span class="line">A &gt;&gt;&gt; 2=0000 1111</span><br></pre></td></tr></table></figure>
+
+<p>＆        如果相对应位都是1，则结果为1，否则为0。<br>|        如果相对应位都是 0，则结果为 0，否则为 1。<br>^        如果相对应位值相同，则结果为0，否则为1。<br>〜        按位取反运算符翻转操作数的每一位，即0变成1，1变成0。<br>&lt;&lt;         按位左移运算符。左操作数按位左移右操作数指定的位数。    </p>
+<blockquote>
+<blockquote>
+<pre><code>按位右移运算符。左操作数按位右移右操作数指定的位数。    </code></pre><blockquote>
+<pre><code>按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。</code></pre></blockquote>
+</blockquote>
+</blockquote>
+<p>4.<strong>逻辑运算符</strong><br>&amp;&amp;    称为逻辑与运算符。当且仅当两个操作数都为真，条件才为真。        （A &amp;&amp; B）为假。<br>| |    称为逻辑或操作符。如果任何两个操作数任何一个为真，条件为真。    （A | | B）为真。<br>！    称为逻辑非运算符。用来反转操作数的逻辑状态。                    ！（A &amp;&amp; B）为真。</p>
+<p>5.<strong>短路逻辑运算符</strong><br>当使用与逻辑运算符时，在两个操作数都为true时，结果才为true，但是当得到第一个操作为false时，其结果就必定是false，这时候就不会再判断第二个操作了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class LuoJi&#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        int a = 5;//定义一个变量；</span><br><span class="line">        boolean b = (a&lt;4)&amp;&amp;(a++&lt;10);</span><br><span class="line">        System.out.println(<span class="string">"使用短路逻辑运算符的结果为"</span>+b);</span><br><span class="line">        System.out.println(<span class="string">"a的结果为"</span>+a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">使用短路逻辑运算符的结果为<span class="literal">false</span></span><br><span class="line">a的结果为5</span><br></pre></td></tr></table></figure>
+<p>6.<strong>赋值运算符</strong><br>=        简单的赋值运算符，将右操作数的值赋给左侧操作数               C = A + B将把A + B得到的值赋给C</p>
+<ul>
+<li>=        加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数    C + = A等价于C = C + A</li>
+</ul>
+<ul>
+<li>=        减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数    C - = A等价于C = C - A</li>
+</ul>
+<ul>
+<li>=        乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数    C * = A等价于C = C * A<br>/ =        除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数    C / = A，C 与 A 同类型时等价于 C = C / A<br>（％）=    取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数    C％= A等价于C = C％A<br>&lt;&lt; =    左移位赋值运算符        C &lt;&lt; = 2等价于C = C &lt;&lt; 2<blockquote>
+<blockquote>
+<p>=    右移位赋值运算符        C &gt;&gt; = 2等价于C = C &gt;&gt; 2<br>＆=     按位与赋值运算符        C＆= 2等价于C = C＆2<br>^ =     按位异或赋值操作符      C ^ = 2等价于C = C ^ 2<br>| =        按位或赋值操作符        C | = 2等价于C = C | 2</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<p>7.<strong>条件运算符</strong><br>条件运算符也被称为三元运算符（三目运算符）。该运算符有3个操作数，并且需要判断布尔表达式的值。该运算符的主要是决定哪个值应该赋值给变量。<br>(条件表达式)？表达式1：表达式2；<br>如：C=A&gt;B?A:B<br>如果A&gt;B,则C=A;如果A&lt;B,则C=B；</p>
+<p>8.<strong>Java运算符优先级</strong><br>后缀        () [] . (点操作符)<br>一元        + + - ！〜<br>乘性         * /％<br>加性         + -<br>移位        &gt;&gt; &gt;&gt;&gt;  &lt;&lt;<br>关系         &gt;&gt; = &lt;&lt; =<br>相等         ==  !=<br>按位与      ＆<br>按位异或    ^<br>按位或      |<br>逻辑与        &amp;&amp;<br>逻辑或      | |<br>条件        ？：<br>赋值        = + = - = * = / =％= &gt;&gt; = &lt;&lt; =＆= ^ = | =<br>逗号        ，    </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/02/02/java%E5%AD%A6%E4%B9%A0day3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-程序练习1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
